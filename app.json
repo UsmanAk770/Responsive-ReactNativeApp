@@ -1,11 +1,15 @@
 {
   "expo": {
     "name": "MyApp",
-    "slug": "MyApp",
+    "slug": "my-app",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "orientation": "default",
+    "icon": "./assets/favicon.png",
     "userInterfaceStyle": "light",
+    "env": {
+      "API_KEY": "your-api-key",
+      "BASE_URL": "exp://192.168.1.6:8081"
+    },
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -21,10 +25,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.usman809.MyApp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0fb8810a-f4a7-4f1f-9215-8cda90aefe4e"
+      }
     }
   }
 }

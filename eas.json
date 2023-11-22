@@ -1,0 +1,37 @@
+{
+  "cli": {
+    "version": ">= 5.4.0"
+  },
+  "build": {
+    "production": {
+      "env": {
+        "EXPO_PUBLIC_API_URL": "exp://192.168.1.6:8081"
+      }
+    },
+    "test": {
+      "env": {
+        "EXPO_PUBLIC_API_URL": "exp://192.168.1.6:8081"
+      }
+    },
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "preview2": {
+      "android": {
+        "gradleCommand": ":app:assembleRelease"}
+    },
+    "preview3": {
+      "developmentClient": true
+    }
+  },
+  "submit": {
+    "production": {
+    }
+  }
+}
